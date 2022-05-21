@@ -1,4 +1,4 @@
-# cryptocurrency_values
+# Joomla! Cryptocurrency Values Module
 Joomla! Cryptocurrency values module. Displays a list of up to date values of the crypto tokens of your choice. 
 
 To use enter the required backend parameters.
