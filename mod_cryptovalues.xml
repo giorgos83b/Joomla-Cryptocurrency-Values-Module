@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0.1" client="site" method="upgrade">
+    <name>Cryptocurrency Values</name>
+    <author>George Chrysostomou</author>
+    <version>4.0.1</version>
+    <license>GNU/GPL</license>
+    <description>A simple module that displays updated information of the cryptocurrencies of your choice from Coinbase API.</description>
+    <files>
+        <filename>mod_cryptovalues.xml</filename>
+        <filename module="mod_cryptovalues">mod_cryptovalues.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+
+      <fields name="params">
+        <fieldset name="basic">
+		
+		<!--
+          <field
+            name="no_of_cryptos"
+            type="number"
+            label="Display top"
+            description="Choose the number of the top ranked cryptocurrencies to display"
+            default="10"
+            max="100"
+            min="1"
+          />
+
+        <field
+          name="basicspacer1"
+          type="spacer"
+          hr="true"
+        />
+        <field
+					name="icon_size"
+					type="radio"
+					label="Icon size"
+					description="Size of the displayed icons"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+          <option value="3">64x64</option>
+					<option value="2">32x32</option>
+					<option value="1">16x16</option>
+          <option value="0">No icons</option>
+				</field>
+
+        <field
+          name="basicspacer2"
+          type="spacer"
+          hr="true"
+        />
+
+        <field
+					name="currency_rate"
+					type="list"
+					label="Currency Exchange Rate"
+					description="Choose the desired exchange rate"
+
+					default="USD"
+					>
+          <option value="USD">USD</option>
+					<option value="EUR">EUR</option>
+					<option value="GBP">GBP</option>
+					<option value="AUD">AUD</option>
+					<option value="RUB">RUB</option>
+					<option value="JPY">JPY</option>
+					<option value="ILS">ILS</option>
+					<option value="HUF">HUF</option>
+					<option value="HKD">HKD</option>
+					<option value="DKK">DKK</option>
+					<option value="CZK">CZK</option>
+					<option value="CNY">CNY</option>
+					<option value="CLP">CLP</option>
+					<option value="CHF">CHF</option>
+					<option value="CAD">CAD</option>
+					<option value="BRL">BRL</option>
+          <option value="SEK">SEK</option>
+
+
+				</field>
+        <field
+          name="basicspacer3"
+          type="spacer"
+          hr="true"
+        />
+
+        -->
+		
+		<field
+					name="crypto_pairs"
+					type="text"
+					label="Crypto Pairs to Display"
+					description="Enter the pairs to display eg BTC-USD separated with comma"
+					default="BTC-EUR,ETH-EUR,ADA-EUR,LTC-EUR,SOL-EUR"
+					>
+          
+
+				</field>
+
+        <field
+          name="basicspacer4"
+          type="spacer"
+          hr="true"
+        />
+
+        <field
+          name="friendly_link"
+          type="radio"
+          label="Display Friendly Link"
+          description="Choose if you wish to display a friendly link "
+          class="btn-group btn-group-yesno"
+          default="1"
+          >
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+
+
+        </field>
+		
+		<field
+          name="basicspacer4"
+          type="spacer"
+          hr="true"
+        />
+
+        <field
+          name="live_updates"
+          type="radio"
+          label="Update Prices Live"
+          description="Choose if you wish to live-update prices via feeds from coinbase API"
+          class="btn-group btn-group-yesno"
+          default="1"
+          >
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+
+
+        </field>
+
+				</fieldset>
+
+      </fields>
+
+    </config>
+    <updateservers>
+		<server type="extension" name="CryptoValues Update Site">https://s2p.me/updates/cryptovaluesmodule/manifest.xml</server>
+	</updateservers>
+</extension>
