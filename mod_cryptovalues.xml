@@ -2,7 +2,7 @@
 <extension type="module" version="4.0.1" client="site" method="upgrade">
     <name>Cryptocurrency Values</name>
     <author>George Chrysostomou</author>
-    <version>4.0.1</version>
+    <version>4.0.2</version>
     <license>GNU/GPL</license>
     <description>A simple module that displays updated information of the cryptocurrencies of your choice from Coinbase API.</description>
     <files>
